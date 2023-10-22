@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My App</title>
+</head>
+<body>
+    <h1>My App</h1>
+    <form action="/predict" method="POST">
+        <label for="input1">Input 1:</label>
+        <input type="int" id="input1" name="input1"><br><br>
+        <label for="input2">Input 2:</label>
+        <input type="int" id="input2" name="input2"><br><br>
+        <label for="input3">Input 3:</label>
+        <input type="int" id="input3" name="input3"><br><br>
+        <label for="input4">Input 4:</label>
+        <input type="int" id="input4" name="input4"><br><br>
+        <label for="input5">Input 5:</label>
+        <input type="int" id="input5" name="input5"><br><br>
+        <label for="input6">Input 6:</label>
+        <input type="int" id="input6" name="input6"><br><br>
+        <label for="input7">Input 7:</label>
+        <input type="int" id="input7" name="input7"><br><br>
+        <label for="input8">Input 8:</label>
+        <input type="int" id="input8" name="input8"><br><br>
+        <label for="input9">Input 9:</label>
+        <input type="int" id="input9" name="input9"><br><br>
+        <label for="input10">Input 10:</label>
+        <input type="int" id="input10" name="input10"><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <!-- Display the prediction result -->
+    {% if prediction %}
+    <p>Prediction: {{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
+
